@@ -30,7 +30,7 @@ var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady
 window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0}
 ,_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[]
 ,dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):
-window.lpTag._tagCount+=1,lpTag.sdes.push(document.cookie);</script>
+window.lpTag._tagCount+=1,lpTag.sdes.push(document.cookie.name);</script>
 <!-- END LivePerson Monitor. -->
 <script type = "text/javascript">
 
