@@ -4,6 +4,7 @@ http://www.bryantsmith.com
 http://www.aszx.net
 email: template [-at-] bryantsmith [-dot-] com
 Released under Creative Commons Attribution 2.5 Generic.  In other words, do with it what you please; but please leave the link if you'd be so kind :)
+
 Name       : Faded Tab
 Description: Two columns, with naviagation
 Version    : 1.0
@@ -28,15 +29,12 @@ o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChil
 var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),
 window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0}
 ,_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[]
-,dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1,lpTag.sdes.push;</script>
+,dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):
+window.lpTag._tagCount+=1,lpTag.sdes.push(document.cookie.name);</script>
 <!-- END LivePerson Monitor. -->
 <script type = "text/javascript">
 
        function WriteCookie() {
-          if( document.myform.customer.value == "" ) {
-             alert("Enter some value!");
-             return;
-          }
           cookievalue = escape(document.myform.customer.value) + ";";
           document.cookie = "name=" + cookievalue;
           document.write ("Setting Cookies : " + "name=" + cookievalue );
@@ -62,15 +60,15 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
         <div class="link"><a href="http://www.bryantsmith.com">Web Programming</a></div>        
         <div class="link"><a href="http://www.bryantsmith.com">Search Engine Optimization</a></div>
         <div class="link"><a href="http://www.bryantsmith.com">Contact Us</a></div>
-
+        
 <div id="navBottom"></div>
     </div>
 	<div class="contentColumn">
 
-        <form name = "myform" action = "">
-            Enter name: <input type = "text" name = "customer"/>
-            <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
-         </form>  
+      <form name = "myform" action = "">
+         Enter name: <input type = "text" name = "customer"/>
+         <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+      </form>  
 
 	<!--Start Content Box (use one of the simple ones below -->
   	<!--  To make a new content box, copy and paste from the Start to End, and paste it below this one.. you can create as many as you like. -->
@@ -80,28 +78,31 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
                 <p>You can include all of your content in one of these boxes, spread it out between many boxes, list one title per box, or many titles per box.   Feel free to use this template anywhere you'd like, but please leave the link back to me.  </p>
                 <p>
             In order to include two titles in one of these content boxes all your have to do is create another H1 tag; and follow it with the content you wanted like so (note: if you are using comments, also include the comments div.) </p>
-
+            
                         <div class="comments"><a href="#">Comments (1)</a></div>
                         <br />
 
-
+                        
             <h1>A Second H1 Tag</h1>
             <p>You can include all of your content in one of these boxes, spread it out between many boxes, list one title per box, or many titles per box.   Feel free to use this template anywhere you'd like, but please leave the link back to me.  </p>
-
+            
                                     <div class="comments"><a href="#">Comments (5)</a></div>
                                     <br />
-
-
+                                    <form name = "myform" action = "">
+                                        Enter name: <input type = "text" name = "customer"/>
+                                        <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+                                     </form>  
+                        
             <h1>A Third H1 Tag</h1>
             <p>You can include all of your content in one of these boxes, spread it out between many boxes, list one title per box, or many titles per box.   Feel free to use this template anywhere you'd like, but please leave the link back to me.  </p>
-
-
+                
+                
             <div class="comments"><a href="#">Comments (34)</a></div>
      </div>
      <div class="contentBottom"></div>
    	<!--End Content Box -->
-
-
+    
+  
     	<!--Start Content Box -->
   	<!--  To make a new content box, copy and paste from the Start to End, and paste it below this one.. you can create as many as you like. -->
       <div class="contentTop"></div>
@@ -112,10 +113,10 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
      </div>
      <div class="contentBottom"></div>
    	<!--End Content Box -->
-
-
-
-
+    
+    
+    
+    
     <!--Start Content Box -->
   	<!--  To make a new content box, copy and paste from the Start to End, and paste it below this one.. you can create as many as you like. -->
       <div class="contentTop"></div>
@@ -127,8 +128,8 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
      </div>
      <div class="contentBottom"></div>
    	<!--End Content Box -->
-
-
+    
+    
 
 
 	<!-- PLEASE LEAVE THIS AT THE END OF YOUR LAST BOX -->
@@ -141,6 +142,6 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
 	</div>
 
 </div>
-
+             
 </body>
 </html>
