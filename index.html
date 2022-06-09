@@ -29,7 +29,8 @@ o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChil
 var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),
 window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0}
 ,_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[]
-,dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1,lpTag.sdes.push;</script>
+,dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):
+window.lpTag._tagCount+=1,lpTag.sdes.push(document.cookie);</script>
 <!-- END LivePerson Monitor. -->
 <script type = "text/javascript">
 
@@ -68,10 +69,10 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
     </div>
 	<div class="contentColumn">
 
-        <form name = "myform" action = "">
-            Enter name: <input type = "text" name = "customer"/>
-            <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
-         </form>  
+      <form name = "myform" action = "">
+         Enter name: <input type = "text" name = "customer"/>
+         <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+      </form>  
 
 	<!--Start Content Box (use one of the simple ones below -->
   	<!--  To make a new content box, copy and paste from the Start to End, and paste it below this one.. you can create as many as you like. -->
@@ -91,7 +92,10 @@ window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefin
             
                                     <div class="comments"><a href="#">Comments (5)</a></div>
                                     <br />
-
+                                    <form name = "myform" action = "">
+                                        Enter name: <input type = "text" name = "customer"/>
+                                        <input type = "button" value = "Set Cookie" onclick = "WriteCookie();"/>
+                                     </form>  
                         
             <h1>A Third H1 Tag</h1>
             <p>You can include all of your content in one of these boxes, spread it out between many boxes, list one title per box, or many titles per box.   Feel free to use this template anywhere you'd like, but please leave the link back to me.  </p>
